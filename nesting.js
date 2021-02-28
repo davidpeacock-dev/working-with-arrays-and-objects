@@ -52,7 +52,14 @@ var employees = [
 
 //Code Here
 
-
+function employeeUpdater(){
+  if(employees.firstName === 'Theo'){
+    delete employee
+  } else if (employees.firstName === 'Lorie'){
+    return 'HR'
+  }
+  return array
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -97,8 +104,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[activities[1]];
+var fluffy2ndFriend = cat.catFriends[name];
 
 
 
@@ -140,7 +147,11 @@ var myCar = {
 
 //Code Here
 
-
+function recordCleaner(){
+  if(myCar.accidents[2] === true){
+    myCar.accidents[2] = false
+  }
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -159,4 +170,11 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
 //Code Here
 
-
+function looper(){
+  if(numsArr[i] % 2 === 0){
+    numsArr[i] = 'even'
+  } else if (numsArr[i] % 2 === 1){
+    numsArr[i] = 'odd'
+  }
+  return numsArr
+}
